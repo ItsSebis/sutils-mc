@@ -1,0 +1,15 @@
+enchant:
+  # Highest level /enchant accepts. Minecraft cannot store enchantment levels above 255 on an item.
+  max-level: 255
+
+status:
+  # How a status is shown before the player name in the tab list. %status% is the player's text.
+  format: "&8[&r%status%&8] &r"
+  # Maximum length of a status, not counting & color codes.
+  max-length: 16
+  # Whether players may use & color/format codes in their status.
+  allow-colors: true
+
+chat:
+  # Format chat as "[status] Name: message". Operator names are pink, everyone else's light gray.
+  enabled: true

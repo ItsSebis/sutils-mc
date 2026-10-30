@@ -1,0 +1,21 @@
+name: SUtils
+version: '0.1.0'
+main: dev.sebi.sutils.SUtilsPlugin
+api-version: '26.3'
+description: Utility tools and shenanigans for the server.
+commands:
+  enchant:
+    description: Applies any enchantment at any level to the held item.
+    usage: /enchant <player> <enchantment> [level]
+    permission: sutils.enchant
+  status:
+    description: Sets or removes the status shown in front of your name in the tab list.
+    usage: /status <text|remove>
+    permission: sutils.status
+permissions:
+  sutils.enchant:
+    description: Use /enchant (unrestricted enchantments and levels).
+    default: op
+  sutils.status:
+    description: Use /status.
+    default: true
