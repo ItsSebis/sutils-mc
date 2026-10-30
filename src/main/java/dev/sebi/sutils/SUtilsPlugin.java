@@ -8,6 +8,7 @@ public final class SUtilsPlugin extends JavaPlugin {
         saveDefaultConfig();
 
         getCommand("enchant").setExecutor(new EnchantCommand(this));
+        getCommand("upgrade").setExecutor(new UpgradeCommand());
 
         Status status = new Status(this);
         getServer().getPluginManager().registerEvents(status, this);

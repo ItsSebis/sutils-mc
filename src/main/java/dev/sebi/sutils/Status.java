@@ -15,7 +15,7 @@ import org.bukkit.plugin.Plugin;
 
 /** Per-player status text (stored in status.yml) shown in front of the name in the tab list. */
 final class Status implements Listener {
-    private static final LegacyComponentSerializer AMPERSAND = LegacyComponentSerializer.legacyAmpersand();
+    static final LegacyComponentSerializer AMPERSAND = LegacyComponentSerializer.legacyAmpersand();
 
     private final Plugin plugin;
     private final File file;

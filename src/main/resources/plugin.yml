@@ -1,5 +1,5 @@
 name: SUtils
-version: '0.1.0'
+version: '0.2.0'
 main: dev.sebi.sutils.SUtilsPlugin
 api-version: '26.3'
 description: Utility tools and shenanigans for the server.
@@ -8,6 +8,10 @@ commands:
     description: Applies any enchantment at any level to the held item.
     usage: /enchant <player> <enchantment> [level]
     permission: sutils.enchant
+  upgrade:
+    description: Upgrades the held tool to netherite, keeping all its data.
+    usage: /upgrade
+    permission: sutils.upgrade
   status:
     description: Sets or removes the status shown in front of your name in the tab list.
     usage: /status <text|remove>
@@ -16,6 +20,12 @@ permissions:
   sutils.enchant:
     description: Use /enchant (unrestricted enchantments and levels).
     default: op
+  sutils.upgrade:
+    description: Use /upgrade.
+    default: op
+  sutils.chat.color:
+    description: Use & color and format codes in chat messages.
+    default: true
   sutils.status:
     description: Use /status.
     default: true
